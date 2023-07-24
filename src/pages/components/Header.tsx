@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,23 +12,40 @@ const Header: React.FC = () => {
   return (
     <header className="bg-black p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-md">Replace w logo here</div>
+        <div className="flex text-white text-lg">
+          <a href="https://www1.nyc.gov">
+            <Image
+              className="pt-1 pr-[2.25px]"
+              src="/nyc_logo.png"
+              alt="nyc logo"
+              width={60}
+              height={60}
+            />
+          </a>
+          | Network Operations Center
+        </div>
         <nav className="hidden md:flex space-x-4">
-          <a href="#" className="text-white hover:text-gray-300">
+          <Link href="/" className="text-white hover:text-gray-300">
             Home
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            tab2
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            tab3
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            tab4
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            tab5
-          </a>
+          </Link>
+          <Link href="/tools" className="text-white hover:text-gray-300">
+            Tools
+          </Link>
+          <Link
+            href="/notifications"
+            className="text-white hover:text-gray-300"
+          >
+            Notifications
+          </Link>
+          <Link href="/reports" className="text-white hover:text-gray-300">
+            Reports
+          </Link>
+          <Link href="/documents" className="text-white hover:text-gray-300">
+            Documents
+          </Link>
+          <Link href="/contact" className="text-white hover:text-gray-300">
+            Contact Us
+          </Link>
         </nav>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white">
@@ -37,22 +56,40 @@ const Header: React.FC = () => {
       {/* Responsive Hamburger Menu */}
       {isMenuOpen && (
         <div className="md:hidden">
-          <nav className="bg-black p-4">
-            <a href="#" className="block text-white hover:text-gray-300">
+          <nav className="bg-black p-1">
+            <Link href="/" className="block text-white hover:text-gray-300">
               Home
-            </a>
-            <a href="#" className="block text-white hover:text-gray-300">
-              tab2
-            </a>
-            <a href="#" className="block text-white hover:text-gray-300">
-              tab3
-            </a>
-            <a href="#" className="block text-white hover:text-gray-300">
-              tab4
-            </a>
-            <a href="#" className="text-white hover:text-gray-300">
-              tab5
-            </a>
+            </Link>
+            <Link
+              href="/tools"
+              className="block text-white hover:text-gray-300"
+            >
+              Tools
+            </Link>
+            <Link
+              href="/notifications"
+              className="block text-white hover:text-gray-300"
+            >
+              Notifications
+            </Link>
+            <Link
+              href="/reports"
+              className="block text-white hover:text-gray-300"
+            >
+              Reports
+            </Link>
+            <Link
+              href="/documents"
+              className="block text-white hover:text-gray-300"
+            >
+              Documents
+            </Link>
+            <Link
+              href="/contact"
+              className="block text-white hover:text-gray-300"
+            >
+              Contact Us
+            </Link>
           </nav>
         </div>
       )}

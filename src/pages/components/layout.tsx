@@ -10,20 +10,9 @@ const Layout: FC<PropsWithChildren<{ title?: string }>> = ({
     <>
       <Metadata title={title} />
       <Header />
+      <main>{children}</main>
     </>
   );
 };
 
 export default Layout;
-
-// const Layout: React.FC<LayoutProps> = ({ children }) => {
-//   return (
-//     <div>
-//       <Metadata />
-//       <Header />
-//       <main>{children}</main>
-//       {/* Other footer or additional components */}
-//     </div>
-//   );
-// };
-// export default Layout;
