@@ -1,20 +1,33 @@
 import { NextPage } from "next";
 import Layout from "./components/layout";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
     <>
       <Layout title="Home">
         {/* Banner */}
-        <div className="flex justify-center items-center bg-gradient-to-t from-cyan-300 to-blue-500 h-[150px] text-center text-white font-bold">
+        <div className="flex justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500 h-[150px] text-center text-white font-bold">
           <div className="flex justify-center items-center px-5 text-[30px] md:text-5xl ">
             Welcome to the DIIT NOC Home Page
           </div>
         </div>
+        {/* To tools page */}
+        <div className="flex flex-col justify-center text-center text-3xl p-16 font-light">
+          <p className="w-[225px] md:w-[500px] mx-auto">
+            View all the tools that we use to manage our networks and to keep
+            the schools running!
+          </p>
+          <Link href="/tools" className="mt-6">
+            <button className="relative bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl py-1 px-2 rounded-md border-4 border-gray-300 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400 hover:underline">
+              See Tools
+            </button>
+          </Link>
+        </div>
 
         <div className="flex flex-col md:flex-row">
           {/*  Main content is */}
-          <div className="bg-white p-16 md:px-28">
+          <div className="bg-black text-white p-16 md:px-28">
             {/* Mision */}
             <div className="flex flex-col space-y-4 text-xl md:text-2xl">
               <p className="text-[30px]">Mission</p>
@@ -34,7 +47,7 @@ const Home: NextPage = () => {
             {/* Cards */}
           </div>
         </div>
-        <div className="grid grid-cols-1 px-16 py-12 md:px-28 mt-3 bg-slate-100 gap-6 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 px-16 py-12 md:px-28 bg-slate-100 gap-6 md:grid-cols-2 lg:grid-cols-2">
           <div className="rounded-lg bg-white p-6 shadow-lg">
             <h3 className="mb-2 text-xl font-bold">Accountability</h3>
             <p className="text-gray-600">
