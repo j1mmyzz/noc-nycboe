@@ -53,7 +53,7 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-      {/* Responsive Hamburger Menu */}
+      {/* Responsive Menu */}
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="bg-black p-1">
