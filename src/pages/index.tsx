@@ -9,13 +9,14 @@ const Home: NextPage = () => {
       <Layout title="Home">
         <Image
           className=""
-          src="/headerv2.gif"
+          src="/banners/home-banner.png"
           alt="nyc logo"
           width={0}
           height={0}
           sizes="100vw"
           style={{ width: "100%", height: "100%" }}
         />
+
         {/* Banner */}
         {/* <div className="flex justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500 h-[150px] text-center text-white font-bold">
           <div className="flex justify-center items-center px-5 text-[30px] md:text-5xl ">
