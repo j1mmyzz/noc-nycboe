@@ -15,9 +15,11 @@ const Home: NextPage = () => {
         {/* To tools page */}
         <div className="flex flex-col justify-center text-center text-3xl p-16 font-light">
           <p className="w-[225px] md:w-[500px] mx-auto">
-            View all the tools that we use to manage our networks and to keep
-            the schools running!
+            View all the tools that we use to manage our{" "}
+            <span className="font-medium">networks</span> and to keep the{" "}
+            <span className="font-medium">schools</span> running!
           </p>
+
           <Link href="/tools" className="mt-6">
             <button className="relative bg-gradient-to-r from-cyan-500 to-blue-500 text-2xl py-1 px-2 rounded-md border-4 border-gray-300 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400 hover:underline">
               See Tools
@@ -27,10 +29,10 @@ const Home: NextPage = () => {
 
         <div className="flex flex-col md:flex-row">
           {/*  Main content is */}
-          <div className="bg-black text-white p-16 md:px-28">
+          <div className="bg-black text-white p-16 md:px-44">
             {/* Mision */}
-            <div className="flex flex-col space-y-4 text-xl md:text-2xl">
-              <p className="text-[30px]">Mission</p>
+            <div className="flex flex-col space-y-4 text-xl md:text-2xl font-sans leading-relaxed text-gray-100">
+              <p className="text-3xl md:text-4xl font-bold">Mission</p>
               <p>
                 The mission of the DOE NOC is to implement a centralized and
                 proactive strategy for network management. This strategy will
@@ -38,12 +40,13 @@ const Home: NextPage = () => {
                 reliable network experience.
               </p>
               <p>
-                The centralization of the technical reources and initiation of
+                The centralization of the technical resources and initiation of
                 proactive procedures will allow the NOC to function from a more
-                service oriented perspective when responding to the needs of the
+                service-oriented perspective when responding to the needs of the
                 students.
               </p>
             </div>
+
             {/* Cards */}
           </div>
         </div>
