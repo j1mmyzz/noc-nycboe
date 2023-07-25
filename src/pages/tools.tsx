@@ -26,7 +26,7 @@ const Tools: NextPage = () => {
         <div className="p-48 pt-10">
           {/* DashBoard */}
           <div className="grid grid-col-1 lg:grid-cols-5 md:grid-col-4 gap-4">
-            <div className=" flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center">
               <Image
                 src="/dashboard/noc_school_dashboard.png"
                 alt="tool"
@@ -35,6 +35,7 @@ const Tools: NextPage = () => {
                 sizes="100"
                 style={{ width: "60%", height: "60%" }}
               />
+
               <p className="text-center">NOC School Dashoard</p>
             </div>
             <div className=" flex flex-col justify-center items-center">
@@ -85,8 +86,8 @@ const Tools: NextPage = () => {
               <Image
                 src="/dashboard/SECURITY_ACCESS_MANAGEMENT.png"
                 alt="tool"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
                 sizes="100vw"
                 style={{ width: "60%", height: "60%" }}
               />
@@ -151,8 +152,8 @@ const Tools: NextPage = () => {
               <Image
                 src="/dashboard/cybershift.png"
                 alt="tool"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
                 sizes="100vw"
                 style={{ width: "60%", height: "60%" }}
               />
