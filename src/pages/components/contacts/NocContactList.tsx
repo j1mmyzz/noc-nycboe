@@ -1,8 +1,8 @@
 const NocContactList: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-4">
-      <div className="font-bold text-2xl">NOC Contact List</div>
-      <table className="table-auto border border-black">
+      <div className="font-bold text-3xl">NOC Contact List</div>
+      <table className="table-auto border border-black text-xl">
         <thead className="bg-cyan-400">
           <tr className="border border-black">
             <th className="border border-black px-2">NOC</th>

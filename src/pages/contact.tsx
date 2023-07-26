@@ -16,9 +16,9 @@ const Contact: NextPage = () => {
           style={{ width: "100%", height: "100%" }}
         />
         {/* FIX THE HEIGHT */}
-        <div className="flex ">
+        <div className="flex flex-row">
           {/* Left side bullets*/}
-          <div className="bg-slate-200 w-1/5 p-4 font-semibold h-screen">
+          <div className="bg-slate-200 w-1/5 p-8 font-semibold h-screen">
             <ul>
               <li>52 Chambers Technical Staff</li>
               <li>Blackberry PIN Listing</li>
@@ -30,9 +30,12 @@ const Contact: NextPage = () => {
               <li>Vendor Support Contact List</li>
             </ul>
           </div>
+
           {/* Actial contacts */}
-          <div className="flex justify-center items-center">
-            <NocContactList />
+          <div className="flex flex-col justify-center items-center">
+            <div className="p-10">
+              <NocContactList />
+            </div>
           </div>
         </div>
       </Layout>
