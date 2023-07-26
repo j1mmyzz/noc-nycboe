@@ -1,71 +1,77 @@
 import Image from "next/image";
 export const dashboardItems = [
   {
-    src: "/dashboard/SECURITY_ACCESS_MANAGEMENT.png",
-    alt: "Security Access Management",
+    src: "/service tools/netscoutLogo.png",
+    alt: "Netscout nGeniusONE",
     sizes: "100vw",
-    text: "Security Access Management",
+    text: "Netscout nGeniusONE",
+    link: "https://netscout.nycboe.net/",
   },
   {
-    src: "/dashboard/dwdm_monitoring_system.jpg",
-    alt: "DWDM Monitoring System",
+    src: "/service tools/splunkLogo.png",
+    alt: "SPLUNK Enterprise",
     sizes: "100vw",
-    text: "DWDM Monitoring System",
+    text: "SPLUNK Enterprise",
+    link: "http://splunkitsi.nycboe.net/",
   },
   {
-    src: "/dashboard/noc-bandwidth-icon.png",
-    alt: "NOC Bandwidth Dashboard",
+    src: "/service tools/riverbedLogo.jpg",
+    alt: "Riverbed SteelCentral NetProfiler",
     sizes: "100vw",
-    text: "NOC Bandwidth Dashboard",
+    text: "Riverbed SteelCentral NetProfiler",
+    link: "https://netim.nycboe.net:8543/vnes/",
   },
   {
-    src: "/dashboard/VPN.png",
-    alt: "VPN",
+    src: "/service tools/config files.jpg",
+    alt: "School MDF Configuration Files",
     sizes: "100vw",
-    text: "VPN",
+    text: "School MDF Configuration Files",
+    link: "http://10.2.134.70/school/config",
   },
   {
-    src: "/dashboard/sesis_big.png",
-    alt: "SESIS Monitoring Dashboard",
+    src: "/service tools/cactischool.png",
+    alt: "School CACTI - Traffic Monitoring Tool",
     sizes: "100vw",
-    text: "SESIS Monitoring Dashboard",
+    text: "School CACTI - Traffic Monitoring Tool",
+    link: "http://schoolcacti.nycboe.net/cacti/graph_view.php",
   },
   {
-    src: "/dashboard/myschools.jpg",
-    alt: "NYC MySchools",
+    src: "/service tools/cacticentral.png",
+    alt: "Central CACTI - Traffic Monitoring Tool",
     sizes: "100vw",
-    text: "NYC MySchools",
-    link: "https://www.myschools.nyc/en/", //ADD A LINK TO EVERYTHING
+    text: "Central CACTI - Traffic Monitoring Tool",
+    link: "http://centralcacti.nycboe.net/cacti/graph_view.php?action=tree&tree_id=2&leaf_id=9",
   },
   {
-    src: "/dashboard/cybershift.png",
-    alt: "Cybershift Monitoring Dashboard",
+    src: "/service tools/Cisco.gif",
+    alt: "Central NAM",
     sizes: "100vw",
-    text: "Cybershift Monitoring Dashboard",
+    text: "Central NAM",
   },
   {
-    src: "/dashboard/FINANCE.png",
-    alt: "Finance Monitoring Dashboard",
+    src: "/service tools/Cisco.gif",
+    alt: "School NAM",
     sizes: "100vw",
-    text: "Finance Monitoring Dashboard",
+    text: "School NAM",
   },
   {
-    src: "/dashboard/web servcies.jpg",
-    alt: "Web Services Monitoring System",
+    src: "/service tools/Cisco.gif",
+    alt: "Sonet NAM",
     sizes: "100vw",
-    text: "Web Services Monitoring System",
+    text: "Sonet NAM",
   },
   {
-    src: "/dashboard/Storage icon.png",
-    alt: "Storage Dashboard",
+    src: "/service tools/miscellaneous tools.jpg",
+    alt: "NOC Miscellaneous Tools",
     sizes: "100vw",
-    text: "Storage Dashboard",
+    text: "NOC Miscellaneous Tools",
+    link: "http://10.251.24.21/ticker.html",
   },
 ];
 
 const ServiceTools: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 gap-4">
       {dashboardItems.map((item, index) => (
         <div
           key={index}
@@ -81,6 +87,7 @@ const ServiceTools: React.FC = () => {
             />
           </a>
           <p className="text-center">{item.text}</p>
+          {/* Add the dropdown for cisco later */}
         </div>
       ))}
     </div>
