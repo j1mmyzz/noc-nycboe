@@ -31,7 +31,7 @@ const NocContactList: React.FC = () => {
             <td className="border border-black px-2">718-935-5731</td>
             <td className="border border-black px-2 text-blue-600">
               <a href="mailto: JWilliams29@schools.nyc.gov">
-                JWilliams29@schools.nyc.govv
+                JWilliams29@schools.nyc.gov
               </a>
             </td>
           </tr>
