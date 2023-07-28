@@ -1,8 +1,8 @@
-import { useState } from "react";
 import Image from "next/image";
 import Layout from "./components/layout";
 import { NextPage } from "next";
 import NocContactList from "./components/contacts/NocContactList";
+<<<<<<< HEAD
 import BlackberryPINListing from "./components/contacts/BlackberryPINListing";
 import ChambersTechnicalStaff from "./components/contacts/ChambersTechnicalStaff";
 import EmergencyContactList from "./components/contacts/EmergencyContactList";
@@ -43,6 +43,9 @@ const Contact: NextPage = () => {
     }
   };
 
+=======
+const Contact: NextPage = () => {
+>>>>>>> parent of 8cd7e1b (omg it works)
   return (
     <>
       <Layout title="Contact">
@@ -56,6 +59,7 @@ const Contact: NextPage = () => {
           sizes="100vw"
           style={{ width: "100%", height: "18%" }}
         />
+<<<<<<< HEAD
         <div className="flex min-h-screen">
           {/* Left side bullets*/}
           <div className="bg-slate-200 w-[25%] p-8 font-semibold flex flex-col h-full">
@@ -135,8 +139,30 @@ const Contact: NextPage = () => {
           </div>
           {/* Actual contacts */}
           <div className="flex justify-center items-center w-full overflow-auto">
+=======
+        {/* FIX THE HEIGHT */}
+        <div className="flex h-full ">
+          {/* Left side bullets*/}
+          <div className="bg-slate-200 w-[25%] p-8 font-semibold">
+            <ul>
+              <li className="hover:underline">52 Chambers Technical Staff</li>
+              <li className="hover:underline">Blackberry PIN Listing</li>
+              <li className="hover:underline">Emergency Contact List</li>
+              <li className="hover:underline">NOC Contact List</li>
+              <li className="hover:underline">
+                NOC Field Operations Staff Contact List
+              </li>
+              <li className="hover:underline">NOC Dashboard Contact List</li>
+              <li className="hover:underline">UPS Maintenance Contact List</li>
+              <li className="hover:underline">Vendor Support Contact List</li>
+            </ul>
+          </div>
+
+          {/* Actial contacts */}
+          <div className="flex flex-col justify-center items-center w-full">
+>>>>>>> parent of 8cd7e1b (omg it works)
             <div className="p-10">
-              <ContactComponent />
+              <NocContactList />
             </div>
           </div>
         </div>
