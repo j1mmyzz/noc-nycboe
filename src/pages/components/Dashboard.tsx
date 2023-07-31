@@ -184,7 +184,7 @@ const Dashboard: React.FC = () => {
           key={index}
           className="flex flex-col justify-center items-center bg-gray-slate shadow-lg rounded-lg p-2"
         >
-          <a href={item.link} target="_blank">
+          <a href={item.link} target="_blank" className="p-6">
             <Image
               src={item.src}
               alt={item.alt}
@@ -193,7 +193,7 @@ const Dashboard: React.FC = () => {
               sizes={item.sizes}
             />
           </a>
-          <p className="text-center">{item.text}</p>
+          <p className="text-center p-2">{item.text}</p>
         </div>
       ))}
     </div>

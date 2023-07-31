@@ -278,7 +278,7 @@ const ServiceTools: React.FC = () => {
           key={index}
           className="flex flex-col justify-center items-center bg-gray-slate shadow-lg rounded-lg p-2"
         >
-          <a href={item.link} target="_blank">
+          <a href={item.link} target="_blank" className="p-6">
             <Image
               src={item.src}
               alt={item.alt}
