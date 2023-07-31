@@ -46,7 +46,7 @@ const Tools: NextPage = () => {
             NOC Service Tools
           </button>
         </div>
-        <div className="p-48 pt-10">
+        <div className="p-48 pt-10 pb-20">
           {showDashboard ? <Dashboard /> : <ServiceTools />}
         </div>
       </Layout>

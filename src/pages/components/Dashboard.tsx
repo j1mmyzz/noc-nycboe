@@ -178,7 +178,7 @@ export const dashboardItems = [
 ];
 const Dashboard: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 gap-4 p-8 overflow-y-scroll h-[calc(100vh-28rem)]">
       {dashboardItems.map((item, index) => (
         <div
           key={index}
