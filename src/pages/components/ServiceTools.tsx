@@ -1,23 +1,6 @@
 import Image from "next/image";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
-  Box,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import {
-  ReactElement,
-  JSXElementConstructor,
-  ReactNode,
-  PromiseLikeOfReactNode,
-} from "react";
 export const dashboardItems = [
   {
     src: "/service tools/netscoutLogo.png",

@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Layout from "./components/layout";
-import Link from "next/link";
 import Image from "next/image";
 
 const Home: NextPage = () => {
