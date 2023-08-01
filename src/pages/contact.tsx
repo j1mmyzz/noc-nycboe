@@ -54,7 +54,7 @@ const Contact: NextPage = () => {
       <div className="flex h-full">
         {/* Left side bullets*/}
         <div className="w-[35%] p-12 font-semibold flex flex-col">
-          <ul className="text-2xl">
+          <ul className="text-xl">
             <li
               className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("ChambersTechnicalStaff")}
@@ -91,7 +91,7 @@ const Contact: NextPage = () => {
               NOC Dashboard Contact List
             </li>
             <li
-              className="hover:underline cursor-pointer ml-4 mb-3"
+              className="hover:underline cursor-pointer ml-4 mb-2"
               onClick={() => handleContactChange("UPSMaintenenceContactList")}
             >
               UPS Maintenance Contact List
@@ -100,7 +100,7 @@ const Contact: NextPage = () => {
               <Accordion defaultIndex={[0]} allowMultiple allowToggle>
                 <AccordionItem border={"none"}>
                   <AccordionButton>
-                    <Box flex="1" textAlign="left" className="text-2xl">
+                    <Box flex="1" textAlign="left" className="text-xl">
                       Vendor Support Contact List
                     </Box>
                     <AccordionIcon />
