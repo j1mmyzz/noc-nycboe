@@ -51,57 +51,56 @@ const Contact: NextPage = () => {
         style={{ width: "100%", height: "18%" }}
       />
 
-      <div className="flex">
+      <div className="flex h-full">
         {/* Left side bullets*/}
-        <div className="bg-slate-200 w-[25%] p-8 font-semibold flex flex-col h-screen">
-          <ul>
+        <div className="w-[35%] p-12 font-semibold flex flex-col">
+          <ul className="text-2xl">
             <li
-              className="hover:underline cursor-pointer ml-4 mb-2"
+              className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("ChambersTechnicalStaff")}
             >
               52 Chambers Technical Staff
             </li>
             <li
-              className="hover:underline cursor-pointer ml-4 mb-2"
+              className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("BlackberryPINListing")}
             >
               Blackberry PIN Listing
             </li>
             <li
-              className="hover:underline cursor-pointer ml-4 mb-2"
+              className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("EmergencyContactList")}
             >
               Emergency Contact List
             </li>
             <li
-              className="hover:underline cursor-pointer ml-4 mb-2"
+              className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("NocContactList")}
             >
               NOC Contact List
             </li>
             <a href="http://noc.nycboe.net/contact/Field%20Operation%20Staff%20Contact%20List%20revised%208-26-2013.xls">
-              <li className="hover:underline cursor-pointer ml-4 mb-2">
+              <li className="hover:underline cursor-pointer ml-4 mb-4">
                 NOC Field Operations Staff Contact List
               </li>
             </a>
-
             <li
-              className="hover:underline cursor-pointer ml-4 mb-2"
+              className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("NocDashboardContactList")}
             >
               NOC Dashboard Contact List
             </li>
             <li
-              className="hover:underline cursor-pointer ml-4"
+              className="hover:underline cursor-pointer ml-4 mb-3"
               onClick={() => handleContactChange("UPSMaintenenceContactList")}
             >
               UPS Maintenance Contact List
             </li>
             <li className="hover:cursor-pointer">
               <Accordion defaultIndex={[0]} allowMultiple allowToggle>
-                <AccordionItem>
+                <AccordionItem border={"none"}>
                   <AccordionButton>
-                    <Box flex="1" textAlign="left">
+                    <Box flex="1" textAlign="left" className="text-2xl">
                       Vendor Support Contact List
                     </Box>
                     <AccordionIcon />
@@ -136,9 +135,9 @@ const Contact: NextPage = () => {
             </li>
           </ul>
         </div>
-        {/* Actual contacts */}
-        <div className="flex justify-center items-center w-full">
-          <div className="p-10 pt-0">
+        {/* Actual contacts from src/pages/components/contacts */}
+        <div className="w-full">
+          <div className="p-10">
             <ContactComponent />
           </div>
         </div>
