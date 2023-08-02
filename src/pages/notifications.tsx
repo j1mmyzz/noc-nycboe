@@ -7,7 +7,7 @@ const Notifications: NextPage = () => {
     <Layout title="Notifications">
       <Image
         className=""
-        src="/banners/notifications-banner.png"
+        src="/headerFinal.png"
         alt="nyc logo"
         width={0}
         height={0}

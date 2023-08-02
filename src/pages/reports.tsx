@@ -7,7 +7,7 @@ const Reports: NextPage = () => {
     <Layout title="Reports">
       <Image
         className=""
-        src="/banners/reports-banner.png"
+        src="/headerFinal.png"
         alt="nyc logo"
         width={0}
         height={0}

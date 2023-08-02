@@ -19,7 +19,7 @@ const Tools: NextPage = () => {
   return (
     <Layout title="Tools">
       <Image
-        src="/banners/tools-banner.png"
+        src="/headerFinal.png"
         alt="nyc logo"
         width={0}
         height={0}

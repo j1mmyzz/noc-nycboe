@@ -43,7 +43,7 @@ const Contact: NextPage = () => {
   return (
     <Layout title="Contact">
       <Image
-        src="/banners/contact-banner.png"
+        src="/headerFinal.png"
         alt="nyc logo"
         width={0}
         height={0}

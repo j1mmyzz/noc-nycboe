@@ -25,25 +25,40 @@ const Header: React.FC = () => {
           | Network Operations Center
         </div>
         <nav className="hidden md:flex space-x-4">
-          <Link href="/" className="text-white hover:text-gray-300">
+          <Link
+            href="/"
+            className="text-white hover:text-gray-300 active:scale-125"
+          >
             Home
           </Link>
-          <Link href="/tools" className="text-white hover:text-gray-300">
+          <Link
+            href="/tools"
+            className="text-white hover:text-gray-300 active:scale-125"
+          >
             Tools
           </Link>
           <Link
             href="/notifications"
-            className="text-white hover:text-gray-300"
+            className="text-white hover:text-gray-300 active:scale-125"
           >
             Notifications
           </Link>
-          <Link href="/reports" className="text-white hover:text-gray-300">
+          <Link
+            href="/reports"
+            className="text-white hover:text-gray-300 active:scale-125"
+          >
             Reports
           </Link>
-          <Link href="/documents" className="text-white hover:text-gray-300">
+          <Link
+            href="/documents"
+            className="text-white hover:text-gray-300 active:scale-125"
+          >
             Documents
           </Link>
-          <Link href="/contact" className="text-white hover:text-gray-300">
+          <Link
+            href="/contact"
+            className="text-white hover:text-gray-300 active:scale-125"
+          >
             Contact Us
           </Link>
         </nav>

@@ -7,7 +7,7 @@ const Documents: NextPage = () => {
     <Layout title="Documents">
       <Image
         className=""
-        src="/banners/documents-banner.png"
+        src="/headerFinal.png"
         alt="nyc logo"
         width={0}
         height={0}
