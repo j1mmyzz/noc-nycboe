@@ -10,9 +10,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-black p-4">
+    <header className="bg-black p-6">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex text-white text-lg">
+        <div className="flex text-white text-xl">
           <a href="https://www1.nyc.gov">
             <Image
               className="pt-1 pr-[2.25px]"
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           </a>
           | Network Operations Center
         </div>
-        <nav className="hidden md:flex space-x-4">
+        <nav className="hidden md:flex space-x-4 text-xl">
           <Link
             href="/"
             className="text-white hover:text-gray-300 active:scale-125"
