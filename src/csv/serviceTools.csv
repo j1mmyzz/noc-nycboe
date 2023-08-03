@@ -1,0 +1,11 @@
+ src,alt,sizes,text,link
+/service tools/netscoutLogo.png,Netscout nGeniusONE,100vw,Netscout nGeniusONE,https://netscout.nycboe.net/
+/service tools/splunkLogo.png,SPLUNK Enterprise,100vw,SPLUNK Enterprise,http://splunkitsi.nycboe.net/
+/service tools/riverbedLogo.jpg,Riverbed SteelCentral NetProfiler,100vw,Riverbed SteelCentral NetProfiler,https://netim.nycboe.net:8543/vnes/
+/service tools/config files.jpg,School MDF Configuration Files,100vw,School MDF Configuration Files,http://10.2.134.70/school/config
+/service tools/cactischool.png,School CACTI - Traffic Monitoring Tool,100vw,School CACTI - Traffic Monitoring Tool,http://schoolcacti.nycboe.net/cacti/graph_view.php
+/service tools/cacticentral.png,Central CACTI - Traffic Monitoring Tool,100vw,Central CACTI - Traffic Monitoring Tool,http://centralcacti.nycboe.net/cacti/graph_view.php?action=tree&tree_id=2&leaf_id=9
+/service tools/Cisco.gif,Central NAM,100vw,Central NAM,
+/service tools/Cisco.gif,School NAM,100vw,School NAM,
+/service tools/Cisco.gif,Sonet NAM,100vw,Sonet NAM,
+/service tools/miscellaneous tools.jpg,NOC Miscellaneous Tools,100vw,NOC Miscellaneous Tools,http://10.251.24.21/ticker.html

@@ -1,5 +1,5 @@
 // components/CSVReader
-
+"use client";
 import React, { useState } from "react";
 import CSVSelector from "./CSVSelector";
 
