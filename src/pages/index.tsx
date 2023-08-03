@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Layout from "./components/layout";
 import Image from "next/image";
+import CSVConverter from "./components/CSVReader";
 
 const Home: NextPage = () => {
   return (
@@ -44,7 +45,7 @@ const Home: NextPage = () => {
           style={{ height: "100%", width: "65%" }}
         />
       </div>
-
+      <CSVConverter />
       {/* <div className="flex flex-col md:flex-row">
         
           <div className="bg-gray-900 text-white p-16 md:px-44">
