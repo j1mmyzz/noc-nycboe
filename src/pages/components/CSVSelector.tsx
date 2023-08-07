@@ -1,18 +1,19 @@
 // components/CSVSelector.tsx
-"use client";
 import React from "react";
 import Papa from "papaparse";
 type Props = {
+  filePath: string;
   onChange(data: string[][]): void;
 };
 
-const CSVSelector = ({ onChange }: Props) => {
-  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
+const CSVSelector = ({ filePath, onChange }: Props) => {
+  React.useEffect(() => {
+    async function fetchData() {
       try {
-        const file = e.target.files[0];
+        const response = await fetch(filePath);
+        const csvText = await response.text();
 
-        Papa.parse<string[]>(file, {
+        Papa.parse<string[]>(csvText, {
           worker: true,
           complete({ data }) {
             onChange(data);
@@ -22,8 +23,11 @@ const CSVSelector = ({ onChange }: Props) => {
         console.error(error);
       }
     }
-  };
-  return <input type="file" accept=".csv" onChange={handleFileChange} />;
+
+    fetchData();
+  }, [filePath, onChange]);
+
+  return null; // No need to render anything here
 };
 
 export default CSVSelector;
