@@ -1,13 +1,12 @@
 import { NextPage } from "next";
-import Layout from "./components/layout";
+import Layout from "./components/ui/layout";
 import Image from "next/image";
-import CSVConverter from "./components/CSVReader";
-import CSVReader from "./components/CSVReader";
+import CSVConverter from "./components/csvParser/CSVReader";
+import CSVReader from "./components/csvParser/CSVReader";
 const DashBoardItems = () => {
   const csvFilePath = "/csv/serviceTools.csv";
   return <CSVReader filePath={csvFilePath} />;
 };
-const pathToCSV = "../";
 
 const Home: NextPage = () => {
   return (

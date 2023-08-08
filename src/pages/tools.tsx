@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useState } from "react";
-import Layout from "./components/layout";
+import Layout from "./components/ui/layout";
 import { NextPage } from "next";
-import Dashboard from "./components/Dashboard";
-import ServiceTools from "./components/ServiceTools";
+import Dashboard from "./components/tools/Dashboard";
+import ServiceTools from "./components/tools/ServiceTools";
 
 const Tools: NextPage = () => {
   const [showDashboard, setShowDashboard] = useState(true);

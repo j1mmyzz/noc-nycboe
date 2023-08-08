@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Layout from "./components/layout";
+import Layout from "./components/ui/layout";
 import { NextPage } from "next";
 import NocContactList from "./components/contacts/NocContactList";
 import BlackberryPINListing from "./components/contacts/BlackberryPINListing";
