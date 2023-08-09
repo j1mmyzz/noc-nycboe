@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from "react";
-// import CSVReader from "../csvParser/CSVReader";
-
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Button,
+} from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 const NAMSelector: React.FC = () => {
   const [nam, setNAM] = useState<
     {
@@ -31,21 +41,23 @@ const NAMSelector: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      {nam.map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col justify-center items-center bg-gray-slate shadow-lg rounded-lg p-2"
-        >
-          <a href={item.link} target="_blank" className="p-6">
-            <div>
-              name={item.name}
-              link={item.link}
-            </div>
+    <Menu>
+      <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+        Select NAM
+      </MenuButton>
+      <MenuList className="hover:bg-gray-200">
+        {nam.map((item, index) => (
+          <a
+            href={item.link}
+            target="_blank"
+            className="text-center"
+            key={index}
+          >
+            {item.name}
           </a>
-        </div>
-      ))}
-    </div>
+        ))}
+      </MenuList>
+    </Menu>
   );
 };
 
