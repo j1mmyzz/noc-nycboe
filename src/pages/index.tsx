@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Layout from "./components/ui/layout";
 import Image from "next/image";
-import CSVConverter from "./components/csvParser/CSVReader";
 import CSVReader from "./components/csvParser/CSVReader";
 const DashBoardItems = () => {
   const csvFilePath = "/csv/serviceTools.csv";

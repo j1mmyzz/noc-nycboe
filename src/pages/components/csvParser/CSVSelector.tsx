@@ -27,7 +27,7 @@ const CSVSelector = ({ filePath, onChange }: Props) => {
     fetchData();
   }, [filePath, onChange]);
 
-  return null; // No need to render anything here
+  return null;
 };
 
 export default CSVSelector;
