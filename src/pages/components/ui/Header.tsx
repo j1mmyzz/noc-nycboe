@@ -37,7 +37,7 @@ const Header: React.FC = () => {
           >
             Tools
           </Link>
-          <Link
+          {/* <Link
             href="/notifications"
             className="text-white hover:text-gray-300 active:scale-125"
           >
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             className="text-white hover:text-gray-300 active:scale-125"
           >
             Reports
-          </Link>
+          </Link> */}
           <Link
             href="/documents"
             className="text-white hover:text-gray-300 active:scale-125"

@@ -1,11 +1,6 @@
 import { NextPage } from "next";
 import Layout from "./components/ui/layout";
 import Image from "next/image";
-import CSVReader from "./components/csvParser/CSVReader";
-const DashBoardItems = () => {
-  const csvFilePath = "/csv/serviceTools.csv";
-  return <CSVReader filePath={csvFilePath} />;
-};
 
 const Home: NextPage = () => {
   return (
@@ -32,7 +27,6 @@ const Home: NextPage = () => {
           style={{ height: "100%", width: "65%" }}
         />
       </div>
-      <DashBoardItems />
     </Layout>
   );
 };

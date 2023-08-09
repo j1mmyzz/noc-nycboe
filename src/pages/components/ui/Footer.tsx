@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { FC } from "react";
 
 const Footer: FC<{ title?: string }> = ({ title }) => {
