@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 // import CSVReader from "../csvParser/CSVReader";
-
 const DashboardItems: React.FC = () => {
   const [dashboardItems, setDashboardItems] = useState<
     {
@@ -14,8 +13,7 @@ const DashboardItems: React.FC = () => {
   >([]);
 
   useEffect(() => {
-    const csvFilePath = "/csv/dashBoardItems.csv"; // For the tools, update the path to the csv file for different tools. Also Jimmy move the csv folder out of public.
-
+    const csvFilePath = " /csv/dashBoardItems.csv"; // For the tools, update the path to the csv file for different tools. Also Jimmy move the csv folder out of public.
     fetch(csvFilePath)
       .then((response) => response.text())
       .then((csvText) => {

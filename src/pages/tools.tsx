@@ -18,14 +18,6 @@ const Tools: NextPage = () => {
 
   return (
     <Layout title="Tools">
-      <Image
-        src="/headerFinal.png"
-        alt="nyc logo"
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: "100%", height: "100%" }}
-      />
       <div className="flex justify-center gap-4 mt-10">
         <button
           className={`border p-2 rounded-md ${

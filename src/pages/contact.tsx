@@ -42,18 +42,9 @@ const Contact: NextPage = () => {
 
   return (
     <Layout title="Contact">
-      <Image
-        src="/headerFinal.png"
-        alt="nyc logo"
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: "100%", height: "18%" }}
-      />
-
       <div className="flex h-full">
         {/* Left side bullets*/}
-        <div className="w-[35%] p-12 font-semibold flex flex-col">
+        <div className="w-[35%] p-12 font-semibold flex flex-col bg-slate-200 h-screen">
           <ul className="text-xl">
             <li
               className="hover:underline cursor-pointer ml-4 mb-4"

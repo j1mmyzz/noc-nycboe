@@ -5,16 +5,6 @@ import Image from "next/image";
 const Home: NextPage = () => {
   return (
     <Layout title="Home">
-      <Image
-        className=""
-        src="/headerFinal.png"
-        alt="nyc logo"
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: "100%", height: "100%" }}
-      />
-
       <div className="flex justify-center">
         <Image
           src="/background (1).gif"

@@ -1,55 +1,57 @@
-import React, { useState } from "react";
-import CSVSelector from "./CSVSelector";
+//Yeah I don't think this and CSV selector are needed anymore
 
-type Props = {
-  filePath: string;
-};
+// import React, { useState } from "react";
+// import CSVSelector from "./CSVSelector";
 
-const CSVReader = ({ filePath }: Props) => {
-  const [data, setData] = useState<string[][]>([]);
+// type Props = {
+//   filePath: string;
+// };
 
-  const headers = data.length > 0 ? data[0] : [];
-  const rows = data.slice(1);
+// const CSVReader = ({ filePath }: Props) => {
+//   const [data, setData] = useState<string[][]>([]);
 
-  const arraysByHeader: { [header: string]: string[] } = {};
+//   const headers = data.length > 0 ? data[0] : [];
+//   const rows = data.slice(1);
 
-  // Initialize arraysByHeader with empty arrays for each header
-  headers.forEach((header) => {
-    arraysByHeader[header] = [];
-  });
+//   const arraysByHeader: { [header: string]: string[] } = {};
 
-  // Populate arraysByHeader with values based on rows
-  rows.forEach((rowData) => {
-    headers.forEach((header, index) => {
-      arraysByHeader[header].push(rowData[index]);
-    });
-  });
+//   // Initialize arraysByHeader with empty arrays for each header
+//   headers.forEach((header) => {
+//     arraysByHeader[header] = [];
+//   });
 
-  const headerOrder = Object.keys(arraysByHeader); // The order of headers
+//   // Populate arraysByHeader with values based on rows
+//   rows.forEach((rowData) => {
+//     headers.forEach((header, index) => {
+//       arraysByHeader[header].push(rowData[index]);
+//     });
+//   });
 
-  return (
-    <div>
-      <CSVSelector filePath={filePath} onChange={(_data) => setData(_data)} />
-      <table>
-        <thead>
-          <tr>
-            {headerOrder.map((header, i) => (
-              <th key={i}>{header}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((rowData, i) => (
-            <tr key={i}>
-              {headerOrder.map((header, j) => (
-                <td key={j}>{arraysByHeader[header][i]}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-};
+//   const headerOrder = Object.keys(arraysByHeader); // The order of headers
 
-export default CSVReader;
+//   return (
+//     <div>
+//       <CSVSelector filePath={filePath} onChange={(_data) => setData(_data)} />
+//       <table>
+//         <thead>
+//           <tr>
+//             {headerOrder.map((header, i) => (
+//               <th key={i}>{header}</th>
+//             ))}
+//           </tr>
+//         </thead>
+//         <tbody>
+//           {rows.map((rowData, i) => (
+//             <tr key={i}>
+//               {headerOrder.map((header, j) => (
+//                 <td key={j}>{arraysByHeader[header][i]}</td>
+//               ))}
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+//     </div>
+//   );
+// };
+
+// export default CSVReader;
