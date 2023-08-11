@@ -1,34 +1,6 @@
-// const ServiceTools: React.FC = () => {
-//   return (
-//     <div className="grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 gap-4">
-//       {dashboardItems.map((item, index) => (
-//         <div
-//           key={index}
-//           className="flex flex-col justify-center items-center bg-gray-slate shadow-lg rounded-lg p-2"
-//         >
-//           <a href={item.link} target="_blank" className="p-6">
-//             <Image
-//               src={item.src}
-//               alt={item.alt}
-//               width={150}
-//               height={100}
-//               sizes={item.sizes}
-//             />
-//           </a>
-//           <p className="text-center">{item.text}</p>
-//           <div className="py-3">{isNam(item.text)}</div>
-//         </div>S
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default ServiceTools;
-
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import NAMSelector from "./NAMSelector";
-// import CSVReader from "../csvParser/CSVReader";
 
 const ServiceTools: React.FC = () => {
   const [dashboardItems, setDashboardItems] = useState<
@@ -42,7 +14,7 @@ const ServiceTools: React.FC = () => {
   >([]);
 
   useEffect(() => {
-    const csvFilePath = "/csv/serviceTools.csv"; // For the tools, update the path to the csv file for different tools. Also Jimmy move the csv folder out of public.
+    const csvFilePath = "/csv/serviceTools.csv"; // Update the path to your CSV file
 
     fetch(csvFilePath)
       .then((response) => response.text())
@@ -81,8 +53,16 @@ const ServiceTools: React.FC = () => {
               sizes={item.sizes}
             />
           </a>
-          <p className="text-center p-2">{item.text}</p>
-          <NAMSelector />
+          <p className="text-center pb-6">{item.text}</p>
+          {item.text === "Central NAM" && (
+            <NAMSelector csvFilePath="/csv/centralNAMLinks.csv" />
+          )}
+          {item.text === "School NAM" && (
+            <NAMSelector csvFilePath="/csv/schoolNAMLinks.csv" />
+          )}
+          {item.text === "Sonet NAM" && (
+            <NAMSelector csvFilePath="/csv/sonetNAMLinks.csv" />
+          )}
         </div>
       ))}
     </div>

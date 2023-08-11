@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, Button } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-const NAMSelector: React.FC = () => {
+
+interface NAMSelectorProps {
+  csvFilePath: string;
+}
+
+const NAMSelector: React.FC<NAMSelectorProps> = ({ csvFilePath }) => {
   const [nam, setNAM] = useState<
     {
       name: string;
@@ -20,8 +15,6 @@ const NAMSelector: React.FC = () => {
   >([]);
 
   useEffect(() => {
-    const csvFilePath = "/csv/centralNAMLinks.csv"; // For the tools, update the path to the csv file for different tools. Also Jimmy move the csv folder out of public then make sure to change the paths int he other fileso otherwise the whole thing will break :D
-
     fetch(csvFilePath)
       .then((response) => response.text())
       .then((csvText) => {
@@ -38,19 +31,19 @@ const NAMSelector: React.FC = () => {
       .catch((error) => {
         console.error("Error fetching or parsing CSV:", error);
       });
-  }, []);
+  }, [csvFilePath]);
 
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
         Select NAM
       </MenuButton>
-      <MenuList className="hover:bg-gray-200">
+      <MenuList className="max-h-72 overflow-auto ">
         {nam.map((item, index) => (
           <a
             href={item.link}
             target="_blank"
-            className="text-center"
+            className="block text-center py-2 hover:bg-gray-200"
             key={index}
           >
             {item.name}
