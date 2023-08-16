@@ -52,7 +52,7 @@ const Documents: NextPage = () => {
             src={documentLinks[selectedLinkIndex]}
             height="100%"
             width="100%"
-          ></iframe>
+          />
         </div>
       </div>
     </Layout>

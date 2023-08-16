@@ -43,7 +43,7 @@ const NAMSelector: React.FC<NAMSelectorProps> = ({ csvFilePath }) => {
           <a
             href={item.link}
             target="_blank"
-            className="block text-center py-2 hover:bg-gray-200"
+            className="block text-center py-2 hover:bg-gray-200 cursor-pointer"
             key={index}
           >
             {item.name}

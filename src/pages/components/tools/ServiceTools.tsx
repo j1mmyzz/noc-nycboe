@@ -41,7 +41,7 @@ const ServiceTools: React.FC = () => {
       {dashboardItems.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center bg-gray-slate shadow-lg rounded-lg p-2"
+          className="flex flex-col justify-center items-center bg-gray-slate shadow-lg rounded-lg p-2 cursor-pointer"
         >
           <a href={item.link} target="_blank" className="p-6">
             <Image
