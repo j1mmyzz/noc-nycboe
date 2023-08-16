@@ -14,8 +14,7 @@ const ServiceTools: React.FC = () => {
   >([]);
 
   useEffect(() => {
-    const csvFilePath = "/csv/serviceTools.csv"; // Update the path to your CSV file
-
+    const csvFilePath = "/csv/serviceTools.csv";
     fetch(csvFilePath)
       .then((response) => response.text())
       .then((csvText) => {
