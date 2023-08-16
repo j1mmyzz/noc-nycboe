@@ -50,8 +50,8 @@ const Documents: NextPage = () => {
         <div className="flex-grow flex items-center justify-center">
           <iframe
             src={documentLinks[selectedLinkIndex]}
-            height="100%" // Adjust the height as needed
-            width="100%" // Adjust the width as needed
+            height="100%"
+            width="100%"
           ></iframe>
         </div>
       </div>
