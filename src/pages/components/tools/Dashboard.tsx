@@ -13,7 +13,7 @@ const DashboardItems: React.FC = () => {
   >([]);
 
   useEffect(() => {
-    const csvFilePath = "/csv/dashBoardItems.csv"; // Also Jimmy move the csv folder out of public.
+    const csvFilePath = "/csv/dashBoardItems.csv";
     fetch(csvFilePath)
       .then((response) => response.text())
       .then((csvText) => {
