@@ -1,16 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NOC Website
 
-## Getting Started
+# Local Development
 
-First, run the development server:
+Requirements: [Node.js](https://nodejs.org/) and yarn (installed using `npm i yarn --g`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+To run this project locally, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Navigate to the project directory: `cd <project-directory>`
+2. Install the dependencies: `yarn`
+3. Start the development server: `yarn dev`
 
+Open your browser and visit `http://localhost:3000` to begin making changes.
+
+# [Hosting instructions](https://nextjs.org/docs/pages/building-your-application/deploying#self-hosting)
