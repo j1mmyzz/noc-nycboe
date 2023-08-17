@@ -13,6 +13,7 @@ const ServiceTools: React.FC = () => {
     }[]
   >([]);
 
+  //Parses through the csv file and breaks it up
   useEffect(() => {
     const csvFilePath = "/csv/serviceTools.csv";
     fetch(csvFilePath)

@@ -2,6 +2,9 @@ import { NextPage } from "next";
 import Layout from "./components/ui/layout";
 import Image from "next/image";
 
+//Note: Whoever edits these files, all images are found in the public folder. Also I removed the reports and notifications page because they didn't work om the original website.
+
+//Only thing this page does it display the NOC mission statemnt and points as an image.
 const Home: NextPage = () => {
   return (
     <Layout title="Home">

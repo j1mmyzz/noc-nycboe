@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Layout from "./components/ui/layout";
 import { NextPage } from "next";
 import NocContactList from "./components/contacts/NocContactList";
@@ -22,7 +21,7 @@ const Contact: NextPage = () => {
   const handleContactChange = (contact: string) => {
     setSelectedContact(contact);
   };
-
+  //All these components can be found in src/components/contacts
   const ContactComponent = () => {
     switch (selectedContact) {
       case "BlackberryPINListing":
@@ -56,13 +55,14 @@ const Contact: NextPage = () => {
               className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("BlackberryPINListing")}
             >
-              Blackberry PIN Listing
+              Blackberry PIN Listing {/*Should Remove because it's outdated*/}
             </li>
             <li
               className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("EmergencyContactList")}
             >
-              Emergency Contact List
+              Emergency Contact List{" "}
+              {/*Should Remove because it doens't show up on the orginal site*/}
             </li>
             <li
               className="hover:underline cursor-pointer ml-4 mb-4"
@@ -79,14 +79,17 @@ const Contact: NextPage = () => {
               className="hover:underline cursor-pointer ml-4 mb-4"
               onClick={() => handleContactChange("NocDashboardContactList")}
             >
-              NOC Dashboard Contact List
+              NOC Dashboard Contact List{" "}
+              {/*Should Remove because it doens't show up on the orginal site*/}
             </li>
             <li
               className="hover:underline cursor-pointer ml-4 mb-2"
               onClick={() => handleContactChange("UPSMaintenenceContactList")}
             >
-              UPS Maintenance Contact List
+              UPS Maintenance Contact List{" "}
+              {/*Should Remove because it doens't show up on the orginal site*/}
             </li>
+            {/*I used Chakra UI here because of styling if you don't like it you can change it to regular HTML, for more info visit https://chakra-ui.com/docs/components */}
             <li className="hover:cursor-pointer">
               <Accordion defaultIndex={[0]} allowMultiple allowToggle>
                 <AccordionItem border={"none"}>
@@ -119,14 +122,14 @@ const Contact: NextPage = () => {
                     </a>
                   </AccordionPanel>
                   <AccordionPanel pb={0.5} className="hover:bg-slate-100">
-                    TW Telecom //Nothing here
+                    TW Telecom{" "}
+                    {/*Should Remove because it doens't show up on the orginal site*/}
                   </AccordionPanel>
                 </AccordionItem>
               </Accordion>
             </li>
           </ul>
         </div>
-        {/* Actual contacts from src/pages/components/contacts */}
         <div className="w-full">
           <div className="p-10">
             <ContactComponent />

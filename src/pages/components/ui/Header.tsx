@@ -2,6 +2,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 
+//Basic header that links to different pages, should be responsive too.
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -38,18 +40,6 @@ const Header: React.FC = () => {
             >
               Tools
             </Link>
-            {/* <Link
-            href="/notifications"
-            className="text-white hover:text-gray-300 active:scale-125"
-          >
-            Notifications
-          </Link>
-          <Link
-            href="/reports"
-            className="text-white hover:text-gray-300 active:scale-125"
-          >
-            Reports
-          </Link> */}
             <Link
               href="/documents"
               className="text-white hover:text-gray-300 active:scale-125"

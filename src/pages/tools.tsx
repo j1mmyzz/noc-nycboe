@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState } from "react";
 import Layout from "./components/ui/layout";
 import { NextPage } from "next";
@@ -18,6 +17,7 @@ const Tools: NextPage = () => {
 
   return (
     <Layout title="Tools">
+      {/*These are the buttons at the top of the page under the header & banner. When clicked it'll render Dthe Dashboard or ServiceTools component found in src/components/tools*/}
       <div className="flex justify-center gap-4 mt-10">
         <button
           className={`border p-2 rounded-md ${
